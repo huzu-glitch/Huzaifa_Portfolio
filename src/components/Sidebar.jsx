@@ -24,11 +24,6 @@ export const Sidebar = () => {
 
   return (
     <>
-      <button className="hamburger-menu" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </button>
       <aside className={`vertical-sidebar ${isSidebarOpen ? 'open' : ''}`}>
         <input
           type="checkbox"
