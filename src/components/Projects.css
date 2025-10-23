@@ -120,3 +120,22 @@
   background: linear-gradient(to right, transparent, #800080, transparent);
   border-bottom: 1px solid #ccc;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #projects {
+        width: 90vw;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 1rem;
+    }
+
+    .projects-heading {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+}

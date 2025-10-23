@@ -310,3 +310,42 @@ aside:not(:has(:checked))
     opacity: 1;
     scale: 1;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .vertical-sidebar {
+        inline-size: var(--collapsed);
+        transition: inline-size 300ms ease-out;
+    }
+
+    .vertical-sidebar.open {
+        inline-size: var(--expanded);
+    }
+
+    .vertical-sidebar:not(:checked) nav {
+        flex-basis: var(--collapsed);
+    }
+
+    .vertical-sidebar:checked nav {
+        flex-basis: var(--expanded);
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 1001;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .hamburger-menu .line {
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+}
