@@ -42,10 +42,7 @@ export const Skills = () => {
             <img src={expressIcon} alt="Express JS" className="tech-icon" />
             <h3>Express JS</h3>
           </div>
-          <div className="tech-card">
-            <img src={routerIcon} alt="React Router 7" className="tech-icon" />
-            <h3>React Router 7</h3>
-          </div>
+
           <div className="tech-card">
             <img src={jsIcon} alt="JavaScript" className="tech-icon" />
             <h3>JavaScript</h3>
